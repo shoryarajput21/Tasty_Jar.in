@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tasty Jar — Authentic Homemade Achar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Offer Bar -->
+  <div class="topbar">
+    <span>🚚 Free India Delivery</span>
+    <span class="dot"></span>
+    <span>💵 Cash on Delivery Available</span>
+    <span class="dot"></span>
+    <span>👋 Welcome to <strong>Tasty Jar</strong></span>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <span>Tasty Jar</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="#policies">Policies</a>
+    </nav>
+
+    <div class="actions">
+      <button class="iconbtn" id="searchBtn" title="Search">🔎</button>
+      <button class="iconbtn" id="cartBtn" title="Cart">🧺 <span id="cartCount" class="cart-bubble">0</span></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__text">
+      <h1>100% Organic Homemade Achar</h1>
+      <p>Taste of tradition in every bite — small-batch pickles made with fresh ingredients and zero preservatives.</p>
+      <a style="text-decoration: none;" href="#shop" class="btn">Shop Now</a>
+    </div>
+    <div class="hero__art">
+      <img src="yt7.jpg" alt="Tasty Jar Achar" class="hero__img">
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <section class="trust">
+    <div class="trust__badge">✅ 100% Homemade</div>
+    <div class="trust__badge">✅ Organic Ingredients</div>
+    <div class="trust__badge">✅ COD Available</div>
+    <div class="trust__badge">✅ Pan-India Delivery</div>
+  </section>
+
+  <!-- Featured Products -->
+  <main class="container" id="shop">
+    <div class="section-head">
+      <h2>Featured Products</h2>
+      <p>Pickle jars in different flavours & sizes</p>
+    </div>
+    <div id="productGrid" class="grid"></div>
+  </main>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews">
+    <div class="section-head">
+      <h2>What Customers Say</h2>
+      <p>Real taste. Real love.</p>
+    </div>
+    <div class="reviews__grid">
+      <figure class="review">
+        <blockquote>“Mango achar is exactly like my nani used to make. Perfect spice!”</blockquote>
+        <figcaption>⭐️⭐️⭐️⭐️⭐️ — Riya S.</figcaption>
+      </figure>
+      <figure class="review">
+        <blockquote>“Lemon pickle with paratha = heaven. Packaging is premium too.”</blockquote>
+        <figcaption>⭐️⭐️⭐️⭐️⭐️ — Akash K.</figcaption>
+      </figure>
+      <figure class="review">
+        <blockquote>“Less oil, bold flavour. Fast delivery to Bangalore.”</blockquote>
+        <figcaption>⭐️⭐️⭐️⭐️ — Meenal P.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer__grid">
+      <div>
+        <h3>About Tasty Jar</h3>
+        <p>Homemade achar crafted with organic ingredients and traditional recipes.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: hello@tastyjar.in</p>
+        <p>Phone/WhatsApp: <a href="https://wa.me/91-9058013507" target="_blank">+91 9058013507</a></p>
+      </div>
+      <div id="policies">
+        <h3>Policies</h3>
+        <ul>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Tasty Jar. All rights reserved.</p>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <aside id="cartDrawer" class="drawer">
+    <div class="drawer__head">
+      <h3>Your Cart</h3>
+      <button id="closeCart" class="iconbtn">✖</button>
+    </div>
+    <div id="cartItems" class="drawer__body"></div>
+    <div class="drawer__foot">
+      <div class="totals">
+        <span>Total:</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+      <button id="checkoutBtn" class="btn btn--full">Checkout</button>
+    </div>
+  </aside>
+
+<script src="app.js"></script>
+</body>
+</html>

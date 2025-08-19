@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Tasty Jar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header style="padding:16px; border-bottom:1px solid #ddd;">
+    <h2>Checkout</h2>
+  </header>
+
+  <main class="container" style="max-width:600px; margin:auto;">
+    <h3>Billing & Shipping Details</h3>
+    <form id="checkoutForm">
+      <label>Full Name</label>
+      <input type="text" name="name" required class="input">
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" required class="input">
+
+      <label>Address</label>
+      <textarea name="address" required class="input"></textarea>
+
+      <label>Email (for receipt)</label>
+      <input type="email" name="email" required class="input">
+
+      <h3>Order Summary</h3>
+      <div id="orderSummary"></div>
+
+      <button type="submit" class="btn btn--full" style="margin-top:16px;">
+        Pay with Razorpay
+      </button>
+    </form>
+  </main>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
